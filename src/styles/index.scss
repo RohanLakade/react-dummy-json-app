@@ -1,0 +1,16 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Custom Variables */
+$primary-font: "Inter", sans-serif;
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $primary-font;
+  min-width: 320px;
+}

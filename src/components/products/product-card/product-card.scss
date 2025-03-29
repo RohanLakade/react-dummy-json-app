@@ -1,0 +1,13 @@
+/* product-card.scss */
+
+/* Ensure smooth transition for scaling and shadow */
+.product-card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Apply the hover effect for scaling and shadow */
+.product-card-hover:hover {
+  transform: scale(1.05); /* Scale the card on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Apply shadow on hover */
+}
+
