@@ -25,6 +25,7 @@ const SearchFilters = () => {
   const handleSortChange = useCallback(
     (e) => {
       setSortBy(e.target.value);
+      sessionStorage.setItem("sortBy", e.target.value);
       searchParams.set("sortBy", e.target.value);
       setSearchParams(searchParams);
     },
@@ -34,6 +35,7 @@ const SearchFilters = () => {
   const handleOrderChange = useCallback(
     (e) => {
       setOrder(e.target.value);
+      sessionStorage.setItem("order", e.target.value);
       searchParams.set("order", e.target.value);
       setSearchParams(searchParams);
     },
